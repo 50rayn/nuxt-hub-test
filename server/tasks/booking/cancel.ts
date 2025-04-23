@@ -5,7 +5,7 @@ export default defineTask({
   },
   run: async () => {
     // Implement booking cancellation logic here
-    console.log('Booking cancellation task started')
+    console.log('Booking cancellation task started :)')
 
     return { result: 'success' }
   }
