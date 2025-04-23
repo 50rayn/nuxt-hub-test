@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {
     database: true,
-    workers: false
+    workers: true
   },
 
   // Development config
