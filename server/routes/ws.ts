@@ -1,10 +1,10 @@
 export default defineWebSocketHandler({
-  open(peer) {
-    console.log('[ws] open', peer)
+  open() {
+    console.log('[ws] open')
   },
 
   message(peer, message) {
-    console.log('[ws] message', peer, message)
+    console.log('[ws] message', message)
     if (message.text().includes('ping')) {
       peer.send('pong')
     }
@@ -14,10 +14,10 @@ export default defineWebSocketHandler({
   },
 
   close(peer, event) {
-    console.log('[ws] close', peer, event)
+    console.log('[ws] close', event)
   },
 
   error(peer, error) {
-    console.log('[ws] error', peer, error)
+    console.log('[ws] error', error)
   }
 })
